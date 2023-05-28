@@ -1,3 +1,4 @@
+# THIS SOLUTION WASNT MADE BY ME, IT JUST WAS ONE OF THE TOP SOLUTIONS ON THE WEBSITE
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
