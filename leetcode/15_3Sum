@@ -1,0 +1,23 @@
+class Solution:
+
+    def twosum(self, nums: List[int], value: int, index: int):
+        d = {}
+        ans = []
+        for i in range(index + 1, len(nums)):
+            if value - nums[i] in d:
+                ans.append([-value, value - nums[i], nums[i]])
+            else:
+                d[nums[i]] = 0
+        return ans
+
+
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
+        ans = []
+        i = 0
+        for i in range(len(nums) - 1):
+            sum2 = self.twosum(nums, -nums[i], i)
+            for k in sum2:
+                if not k in ans:
+                    ans.append(k)
+        return ans
