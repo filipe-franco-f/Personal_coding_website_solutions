@@ -1,3 +1,3 @@
 # Explanation
 
-Repository to post personal solutions to coding websites, like leettcode
+Repository to post personal solutions to coding websites, like leetcode
